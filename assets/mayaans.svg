@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#1a1814"/>
+  <!-- Chocolate bar / geometric tech shape -->
+  <rect x="42" y="32" width="36" height="48" rx="4" stroke="#c4a96d" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <line x1="54" y1="32" x2="54" y2="80" stroke="#c4a96d" stroke-width="1" opacity="0.5"/>
+  <line x1="66" y1="32" x2="66" y2="80" stroke="#c4a96d" stroke-width="1" opacity="0.5"/>
+  <line x1="42" y1="48" x2="78" y2="48" stroke="#c4a96d" stroke-width="1" opacity="0.5"/>
+  <line x1="42" y1="64" x2="78" y2="64" stroke="#c4a96d" stroke-width="1" opacity="0.5"/>
+  <!-- Tech circuit node accents -->
+  <circle cx="35" cy="40" r="2" fill="#c4a96d" opacity="0.6"/>
+  <path d="M35 40 H42" stroke="#c4a96d" stroke-width="1" opacity="0.5"/>
+  <circle cx="85" cy="72" r="2" fill="#c4a96d" opacity="0.6"/>
+  <path d="M78 72 H85" stroke="#c4a96d" stroke-width="1" opacity="0.5"/>
+  <text x="60" y="108" text-anchor="middle" fill="#c4a96d" font-family="Georgia, serif" font-size="9" letter-spacing="2" opacity="0.7">MC</text>
+</svg>

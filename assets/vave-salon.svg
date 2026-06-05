@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#1a1814"/>
+  <!-- Minimalist scissors/beauty curves -->
+  <circle cx="48" cy="76" r="10" stroke="#c4a96d" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="72" cy="76" r="10" stroke="#c4a96d" stroke-width="1.5" opacity="0.6"/>
+  <path d="M52 68 L70 38" stroke="#c4a96d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M68 68 L50 38" stroke="#c4a96d" stroke-width="2" stroke-linecap="round"/>
+  <!-- Elegant ribbon or hair curves -->
+  <path d="M35 30 Q60 15 85 30 Q60 45 35 30" fill="#c4a96d" opacity="0.15"/>
+  <path d="M30 45 Q60 30 90 45" stroke="#c4a96d" stroke-width="1" opacity="0.3"/>
+  <text x="60" y="108" text-anchor="middle" fill="#c4a96d" font-family="Georgia, serif" font-size="9" letter-spacing="2" opacity="0.7">VS</text>
+</svg>

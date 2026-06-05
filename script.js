@@ -6,8 +6,44 @@ const loader = document.querySelector(".loader");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const projects = {
-  "lost-found": {
+  "vave-salon": {
     number: "01",
+    title: "Vave Salon",
+    image: "assets/vave-salon.svg",
+    summary: "Designed and built a responsive business website for a salon brand, focusing on modern UI/UX principles, mobile-first design, and a seamless user experience across all devices.",
+    problem: "The salon needed a premium digital presence that allowed clients to browse services easily, check stylist profiles, and contact them seamlessly on mobile devices.",
+    solution: "Created a mobile-first responsive design with refined UI, smooth transitions, and a clean services layout that elevates the salon's brand online.",
+    timeline: "Jun 2025 to Aug 2025",
+    stack: "Web Design, UI/UX, Responsive, Client Work",
+    impact: "Delivered a high-conversion website that showcases salon services and drives customer inquiries.",
+    link: "https://www.vavesalon.com/"
+  },
+  mayaans: {
+    number: "02",
+    title: "Mayaans Chocotech",
+    image: "assets/mayaans.svg",
+    summary: "Developed a professional, high-performance website for Mayaans Chocotech. Focused on premium design aesthetics, clear product presentation, and smooth user interactions.",
+    problem: "A confectionery tech business needing a polished digital presence to present their confectionery technology and products professionally to prospective business partners.",
+    solution: "Engineered a clean frontend with responsive layouts, focusing on high-quality product images, structured technical data, and smooth animations.",
+    timeline: "Sep 2025 to Oct 2025",
+    stack: "Web Design, Frontend, UI/UX, Client Work",
+    impact: "Provides a modern, high-speed brand storefront that showcases their technology and product lines effectively.",
+    link: "https://www.mayaans.com/"
+  },
+  "hira-fragrances": {
+    number: "03",
+    title: "Hira Fragrances",
+    image: "assets/hira-fragrances.svg",
+    summary: "A premium e-commerce website designed and built for Hira Fragrances — a luxury perfume brand offering curated fragrance collections with an elegant online shopping experience.",
+    problem: "The brand needed a polished digital storefront that reflected the luxury and sophistication of its fragrance line while enabling seamless online purchases.",
+    solution: "A fully designed and developed e-commerce website with refined product presentation, elegant typography, smooth navigation, and a purchase flow that matches the brand's premium identity.",
+    timeline: "May 2026 to Jun 2026",
+    stack: "Web Design, E-Commerce, Frontend Development, Brand Identity",
+    impact: "Live at hirafragrances.com — delivering a polished brand experience that converts visitors into customers.",
+    link: "https://hirafragrances.com/"
+  },
+  "lost-found": {
+    number: "04",
     title: "Lost & Found",
     image: "assets/lost-found.svg",
     summary: "A campus utility that helps students report and recover lost items through QR-based identification and a simpler discovery flow.",
@@ -18,7 +54,7 @@ const projects = {
     impact: "Improves campus recovery coordination without claiming measured deployment results."
   },
   payment: {
-    number: "02",
+    number: "05",
     title: "Payment Automation",
     image: "assets/payment-automation.svg",
     summary: "An automated recurring digital payment system concept built around structured workflows, payment reminders, and reduced manual tracking.",
@@ -29,7 +65,7 @@ const projects = {
     impact: "Designed to reduce repetitive admin effort while preserving clear human oversight."
   },
   genz: {
-    number: "03",
+    number: "06",
     title: "GenZ Standard English Translator",
     image: "assets/genz-translator.svg",
     summary: "A language-processing project that turns slang-heavy expressions into clearer standard English for more accessible communication.",
@@ -40,7 +76,7 @@ const projects = {
     impact: "Demonstrates practical language tooling without overstating production-scale accuracy."
   },
   quickbots: {
-    number: "04",
+    number: "07",
     title: "Quick Bots",
     image: "assets/quick-bots.svg",
     summary: "A rapid bot-building framework designed to deploy intelligent conversational agents with minimal setup and maximum flexibility.",
@@ -51,7 +87,7 @@ const projects = {
     impact: "Reduces bot development time significantly while maintaining customization flexibility."
   },
   sosync: {
-    number: "05",
+    number: "08",
     title: "SOSYNC",
     image: "assets/sosync.svg",
     summary: "A mobile emergency alert app that broadcasts your live GPS location to all trusted contacts simultaneously with a single long-press — replacing slow calls and manual texts with instant, one-button safety.",
@@ -60,18 +96,6 @@ const projects = {
     timeline: "Apr 2026 to Jun 2026",
     stack: "Mobile App, GPS API, SMS/WhatsApp integration, real-time location",
     impact: "Reduces emergency alert time to under 2 seconds, replacing the slow process of individual calls or texts during a crisis."
-  },
-  "hira-fragrances": {
-    number: "06",
-    title: "Hira Fragrances",
-    image: "assets/hira-fragrances.svg",
-    summary: "A premium e-commerce website designed and built for Hira Fragrances — a luxury perfume brand offering curated fragrance collections with an elegant online shopping experience.",
-    problem: "The brand needed a polished digital storefront that reflected the luxury and sophistication of its fragrance line while enabling seamless online purchases.",
-    solution: "A fully designed and developed e-commerce website with refined product presentation, elegant typography, smooth navigation, and a purchase flow that matches the brand's premium identity.",
-    timeline: "May 2026 to Jun 2026",
-    stack: "Web Design, E-Commerce, Frontend Development, Brand Identity",
-    impact: "Live at hirafragrances.com — delivering a polished brand experience that converts visitors into customers.",
-    link: "https://hirafragrances.com/"
   }
 };
 
@@ -408,7 +432,7 @@ document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
 setupCursor();
 setupMagneticButtons();
 setupParallax();
-setProject("lost-found");
+setProject("vave-salon");
 
 // GSAP might be loaded synchronously before this script (defer)
 // Try immediately, and also on load as fallback
