@@ -1558,18 +1558,203 @@ h3.section-title {
   background: var(--light);
 }
 
-.about-layout {
-  display: grid;
-  grid-template-columns: 1fr 0.92fr;
-  gap: clamp(2rem, 6vw, 6rem);
-  align-items: start;
+/* About Hero section styles */
+.about-hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem clamp(1rem, 4vw, 4rem) 5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.about-story {
-  color: var(--mid);
-  font-size: 1.06rem;
+.about-hero-shell {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.about-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--white);
+  max-width: 800px;
+  margin: 1.5rem 0;
+}
+
+.about-hero-title .accent {
+  color: var(--gold-light);
+  font-style: italic;
+}
+
+.about-hero-copy {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 1.7;
+  color: rgba(253, 251, 248, 0.7);
+  max-width: 600px;
+  margin-bottom: 4rem;
+}
+
+/* Team Grid and Card Styles */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.team-card {
+  background: rgba(253, 251, 248, 0.03);
+  border: 1px solid rgba(196, 169, 109, 0.15);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s var(--ease-out-expo),
+              border-color 0.4s var(--ease-smooth),
+              box-shadow 0.4s var(--ease-smooth);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold-light);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.team-card:hover::before {
+  transform: scaleX(1);
+}
+
+.team-avatar {
+  width: 60px;
+  height: 60px;
+  background: rgba(196, 169, 109, 0.1);
+  border: 1px solid var(--gold-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  margin-bottom: 1.5rem;
+}
+
+.team-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.team-bio {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(253, 251, 248, 0.6);
+  margin-bottom: 1.5rem;
+  min-height: 4.8rem;
+}
+
+.team-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-skills .skill-tag {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  background: rgba(253, 251, 248, 0.05);
+  border: 1px solid rgba(253, 251, 248, 0.1);
+  color: rgba(253, 251, 248, 0.75);
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.team-card:hover .team-skills .skill-tag {
+  border-color: rgba(196, 169, 109, 0.3);
+  color: var(--gold-light);
+}
+
+.team-links {
+  margin-top: auto;
+}
+
+.team-link {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s var(--ease-smooth);
+}
+
+.team-link:hover {
+  color: var(--white);
+}
+
+/* Responsiveness for team section */
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .about-hero {
+    padding-top: 6rem;
+  }
+  .team-bio {
+    min-height: auto;
+  }
 }
 
 .skill-cloud {

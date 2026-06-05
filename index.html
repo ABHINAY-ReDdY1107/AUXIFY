@@ -32,9 +32,9 @@
       <span></span><span></span>
     </button>
     <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#top">About Us</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#about">About</a>
       <a href="#process">Process</a>
       <a href="#faq">FAQ</a>
       <a class="nav-cta magnetic" href="#contact">Start a Project</a>
@@ -42,45 +42,84 @@
   </header>
 
   <main id="main">
-    <!-- HERO -->
-    <section class="hero section-dark" id="top" aria-labelledby="heroTitle">
+    <!-- ABOUT US (TOP SECTION) -->
+    <section class="hero section-dark about-hero" id="top" aria-labelledby="aboutUsTitle">
       <div class="hero-grain" aria-hidden="true"></div>
       <div class="orbital-lines" aria-hidden="true">
         <span></span><span></span><span></span>
       </div>
-      <div class="hero-shell">
-        <p class="eyebrow split-text">AI-powered digital studio</p>
-        <h1 class="hero-title" id="heroTitle">
-          <span class="title-line">Premium websites,</span>
-          <span class="title-line accent">automation systems</span>
-          <span class="title-line">and intelligent</span>
-          <span class="title-line">products.</span>
+      <div class="about-hero-shell">
+        <p class="eyebrow reveal">About Us</p>
+        <h1 class="about-hero-title reveal" id="aboutUsTitle">
+          We are a team of CSE builders from <span class="accent">Mahindra University</span>.
         </h1>
-        <p class="hero-copy reveal">
-          Auxify blends luxury interface design with practical AI workflows for founders, brands, student ventures, NGOs, and teams that need polished work without slow agency overhead.
+        <p class="about-hero-copy reveal">
+          Auxify is led by three passionate student builders crafting high-performance websites, automation systems, and intelligent digital products.
         </p>
-        <div class="hero-actions reveal">
-          <a class="button button-primary magnetic" href="#projects">Explore Work</a>
-          <a class="button button-ghost magnetic" href="#contact">Book a Build</a>
+        
+        <div class="team-grid reveal">
+          <!-- B. Abhinay Reddy -->
+          <div class="team-card">
+            <div class="team-avatar">AR</div>
+            <h3 class="team-name">B. Abhinay Reddy</h3>
+            <p class="team-role">Team Lead &amp; Builder</p>
+            <p class="team-bio">
+              A student at Mahindra University specializing in smart systems, practical automations, and modern digital experiences. Focuses on real-world utility with clean UI.
+            </p>
+            <div class="team-skills">
+              <span class="skill-tag">Web Dev</span>
+              <span class="skill-tag">Automation</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">Framer</span>
+            </div>
+            <div class="team-links">
+              <a href="https://abhinay-reddy1107.github.io/Portfolio/" target="_blank" class="team-link">Portfolio ↗</a>
+            </div>
+          </div>
+
+          <!-- J. Lokesh Manikanth Reddy -->
+          <div class="team-card">
+            <div class="team-avatar">LR</div>
+            <h3 class="team-name">J. Lokesh Manikanth Reddy</h3>
+            <p class="team-role">Software &amp; Systems Developer</p>
+            <p class="team-bio">
+              A CSE student at Mahindra University bridging software development and corporate governance. Currently pursuing the CS Executive Programme to merge tech with compliance.
+            </p>
+            <div class="team-skills">
+              <span class="skill-tag">Software Eng</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Web Dev</span>
+              <span class="skill-tag">Databases</span>
+            </div>
+            <div class="team-links">
+              <a href="https://lokeshmanikanthreddyj.github.io/Portfolio/" target="_blank" class="team-link">Portfolio ↗</a>
+            </div>
+          </div>
+
+          <!-- Samhith Reddy -->
+          <div class="team-card">
+            <div class="team-avatar">SR</div>
+            <h3 class="team-name">Samhith Reddy</h3>
+            <p class="team-role">UI/UX Designer &amp; Developer</p>
+            <p class="team-bio">
+              A CSE student at Mahindra University focused on UI/UX. Enjoys crafting intuitive digital experiences at the intersection of design, aviation systems, and Formula 1 data.
+            </p>
+            <div class="team-skills">
+              <span class="skill-tag">UI/UX Design</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Framer</span>
+              <span class="skill-tag">SwiftUI</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">GenAI</span>
+            </div>
+            <div class="team-links">
+              <a href="https://samhith-m5.github.io/portfolio/" target="_blank" class="team-link">Portfolio ↗</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <aside class="hero-studio-card float-card" aria-label="Studio snapshot">
-        <div class="studio-card-top">
-          <span>Selected capabilities</span>
-          <strong>2026</strong>
-        </div>
-        <div class="studio-rings" aria-hidden="true">
-          <i></i><i></i><i></i>
-        </div>
-        <ul>
-          <li>Web design and front-end builds</li>
-          <li>AI workflow automation</li>
-          <li>Product prototypes and data tools</li>
-        </ul>
-      </aside>
-      <div class="scroll-cue" aria-hidden="true">
-        <span></span>
-        Scroll
       </div>
     </section>
 
@@ -261,6 +300,11 @@
               <div><dt>Stack</dt><dd id="detailStack">Python, QR workflows, UI planning, data handling</dd></div>
               <div><dt>Impact</dt><dd id="detailImpact">Improves campus recovery coordination without claiming measured deployment results.</dd></div>
             </dl>
+            <div id="detailLinkContainer" style="margin-top: 2rem; display: none;">
+              <a id="detailLink" href="#" target="_blank" class="button button-ghost magnetic" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                View Project ↗
+              </a>
+            </div>
           </div>
         </article>
       </div>
@@ -300,20 +344,11 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section about" id="about" aria-labelledby="aboutTitle">
-      <div class="about-layout">
-        <div>
-          <p class="eyebrow reveal">About</p>
-          <h2 class="section-title reveal" id="aboutTitle">A technical designer building at the intersection of AI, interfaces, and useful systems.</h2>
-        </div>
-        <div class="about-story reveal">
-          <p>Auxify is led with a builder's mindset: understand the user's problem, shape a strong visual direction, then build the simplest system that solves it well. The work draws from computer science, data analysis, product design, and hands-on AI tooling.</p>
-          <p>The studio is intentionally lean. That means more direct thinking, faster prototypes, and fewer layers between an idea and a live product.</p>
-          <div class="skill-cloud" aria-label="Skills and tools">
-            <span>Python</span><span>SQL</span><span>Data Analysis</span><span>Figma</span><span>Framer</span><span>N8N</span><span>AI Tools</span><span>Automation</span><span>Frontend</span>
-          </div>
-        </div>
+    <!-- SKILLS & TOOLS -->
+    <section class="section about" id="skills" aria-label="Skills and Tools">
+      <div class="section-heading centered" style="margin-bottom: 3rem;">
+        <p class="eyebrow reveal">Skills &amp; Tools</p>
+        <h2 class="section-title reveal">Our Technical Stack &amp; Expertise</h2>
       </div>
       <div class="tool-gallery reveal" aria-label="Tools used by Auxify">
         <div class="tool-card">

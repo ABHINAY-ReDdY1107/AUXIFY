@@ -70,7 +70,8 @@ const projects = {
     solution: "A fully designed and developed e-commerce website with refined product presentation, elegant typography, smooth navigation, and a purchase flow that matches the brand's premium identity.",
     timeline: "May 2026 to Jun 2026",
     stack: "Web Design, E-Commerce, Frontend Development, Brand Identity",
-    impact: "Live at hirafragrances.com — delivering a polished brand experience that converts visitors into customers."
+    impact: "Live at hirafragrances.com — delivering a polished brand experience that converts visitors into customers.",
+    link: "https://hirafragrances.com/"
   }
 };
 
@@ -167,6 +168,26 @@ const setProject = (key) => {
       image.style.transform = "scale(1)";
     }, 200);
   }
+
+  // Update dynamic project link
+  const linkContainer = document.getElementById("detailLinkContainer");
+  const linkEl = document.getElementById("detailLink");
+  if (linkContainer && linkEl) {
+    linkContainer.style.opacity = "0";
+    linkContainer.style.transform = "translateY(8px)";
+    setTimeout(() => {
+      if (project.link) {
+        linkEl.setAttribute("href", project.link);
+        linkContainer.style.display = "block";
+        setTimeout(() => {
+          linkContainer.style.opacity = "1";
+          linkContainer.style.transform = "translateY(0)";
+        }, 50);
+      } else {
+        linkContainer.style.display = "none";
+      }
+    }, 200);
+  }
 };
 
 /* ── Wallet interaction ──────────────────────────────── */
@@ -183,6 +204,14 @@ document.querySelectorAll(".wallet-card").forEach((card) => {
     showcase?.classList.add("is-open");
     walletButton?.setAttribute("aria-expanded", "true");
     setProject(card.dataset.project);
+
+    // Auto-scroll to detail panel when card is clicked
+    const detailPanel = document.getElementById("projectDetail");
+    if (detailPanel) {
+      setTimeout(() => {
+        detailPanel.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 150);
+    }
   });
 });
 
@@ -326,27 +355,25 @@ const setupParallax = () => {
 const setupMotion = () => {
   if (typeof gsap === "undefined" || reduceMotion) {
     // Fallback: just show everything
-    document.querySelectorAll(".title-line").forEach((line) => {
-      line.style.transform = "none";
-    });
-    document.querySelectorAll(".hero-copy, .hero-actions, .hero-studio-card").forEach((el) => {
+    document.querySelectorAll(".about-hero-title, .about-hero-copy, .team-card").forEach((el) => {
       el.style.opacity = "1";
       el.style.transform = "none";
     });
     return;
   }
 
-  gsap.set(".title-line", { yPercent: 110 });
-  gsap.set(".hero-copy, .hero-actions, .hero-studio-card", { y: 24, opacity: 0 });
+  gsap.set(".about-hero-title", { y: 24, opacity: 0 });
+  gsap.set(".about-hero-copy", { y: 24, opacity: 0 });
+  gsap.set(".team-card", { y: 40, opacity: 0 });
 
   gsap.timeline({ defaults: { ease: "power4.out" } })
-    .to(".title-line", { yPercent: 0, duration: 1, stagger: 0.1, delay: 0.2 })
-    .to(".hero-copy, .hero-actions", { y: 0, opacity: 1, duration: 0.75, stagger: 0.08 }, "-=0.45")
-    .to(".hero-studio-card", { y: 0, opacity: 1, duration: 0.75 }, "-=0.55");
+    .to(".about-hero-title", { y: 0, opacity: 1, duration: 0.8, delay: 0.2 })
+    .to(".about-hero-copy", { y: 0, opacity: 1, duration: 0.6 }, "-=0.4")
+    .to(".team-card", { y: 0, opacity: 1, duration: 0.8, stagger: 0.15 }, "-=0.3");
 };
 
 /* ── Detail text transition ──────────────────────────── */
-const detailTransitionEls = document.querySelectorAll("#detailNumber, #detailTitle, #detailSummary, #detailProblem, #detailSolution, #detailTimeline, #detailStack, #detailImpact, #detailImage");
+const detailTransitionEls = document.querySelectorAll("#detailNumber, #detailTitle, #detailSummary, #detailProblem, #detailSolution, #detailTimeline, #detailStack, #detailImpact, #detailImage, #detailLinkContainer");
 detailTransitionEls.forEach((el) => {
   el.style.transition = "opacity 0.25s ease, transform 0.25s ease";
 });
