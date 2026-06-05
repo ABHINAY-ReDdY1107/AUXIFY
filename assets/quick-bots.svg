@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" rx="12" fill="#1A1814"/>
+  <rect x="40" y="40" width="320" height="220" rx="8" fill="#2D2A24" stroke="#8B7340" stroke-width="0.5"/>
+  <!-- Bot head -->
+  <rect x="150" y="70" width="100" height="80" rx="16" fill="#C4A96D" opacity="0.15" stroke="#C4A96D" stroke-width="1.5"/>
+  <circle cx="178" cy="105" r="8" fill="#C4A96D"/>
+  <circle cx="222" cy="105" r="8" fill="#C4A96D"/>
+  <rect x="185" y="125" width="30" height="4" rx="2" fill="#C4A96D" opacity="0.6"/>
+  <!-- Antenna -->
+  <line x1="200" y1="70" x2="200" y2="50" stroke="#C4A96D" stroke-width="1.5"/>
+  <circle cx="200" cy="46" r="4" fill="#C4A96D"/>
+  <!-- Lightning bolts -->
+  <path d="M120 90 L130 110 L125 110 L135 135" stroke="#8B7340" stroke-width="2" fill="none"/>
+  <path d="M280 90 L270 110 L275 110 L265 135" stroke="#8B7340" stroke-width="2" fill="none"/>
+  <!-- Chat bubbles -->
+  <rect x="80" y="170" width="100" height="40" rx="8" fill="#C4A96D" opacity="0.1" stroke="#C4A96D" stroke-width="0.8"/>
+  <line x1="95" y1="183" x2="165" y2="183" stroke="#C4A96D" stroke-width="1" opacity="0.4"/>
+  <line x1="95" y1="195" x2="145" y2="195" stroke="#C4A96D" stroke-width="1" opacity="0.3"/>
+  <rect x="220" y="175" width="100" height="40" rx="8" fill="#C4A96D" opacity="0.1" stroke="#C4A96D" stroke-width="0.8"/>
+  <line x1="235" y1="188" x2="305" y2="188" stroke="#C4A96D" stroke-width="1" opacity="0.4"/>
+  <line x1="235" y1="200" x2="285" y2="200" stroke="#C4A96D" stroke-width="1" opacity="0.3"/>
+  <!-- Label -->
+  <text x="200" y="245" text-anchor="middle" fill="#C4A96D" font-family="sans-serif" font-size="11" letter-spacing="0.15em" opacity="0.6">QUICK BOTS</text>
+</svg>

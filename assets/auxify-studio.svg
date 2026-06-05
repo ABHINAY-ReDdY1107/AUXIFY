@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Auxify studio website mockup">
+  <rect width="900" height="620" fill="#f5edd8"/>
+  <rect x="70" y="72" width="760" height="476" rx="36" fill="#1a1814"/>
+  <path d="M70 182h760" stroke="#3f382d" stroke-width="2"/>
+  <circle cx="120" cy="126" r="10" fill="#c4a96d"/>
+  <circle cx="154" cy="126" r="10" fill="#8b7340"/>
+  <circle cx="188" cy="126" r="10" fill="#f5edd8"/>
+  <rect x="118" y="238" width="364" height="28" rx="14" fill="#fdfbf8"/>
+  <rect x="118" y="292" width="300" height="28" rx="14" fill="#c4a96d"/>
+  <rect x="118" y="352" width="214" height="13" rx="6" fill="#807868"/>
+  <rect x="118" y="382" width="262" height="13" rx="6" fill="#807868"/>
+  <rect x="590" y="230" width="152" height="206" rx="24" fill="#fdfbf8" transform="rotate(8 666 333)"/>
+  <rect x="548" y="254" width="152" height="206" rx="24" fill="#c4a96d" transform="rotate(-10 624 357)"/>
+  <rect x="630" y="270" width="152" height="206" rx="24" fill="#2d2a24" stroke="#c4a96d" transform="rotate(14 706 373)"/>
+  <path d="M116 472h666" stroke="#3f382d" stroke-width="2"/>
+  <rect x="118" y="500" width="92" height="10" rx="5" fill="#c4a96d"/>
+  <rect x="246" y="500" width="92" height="10" rx="5" fill="#807868"/>
+  <rect x="374" y="500" width="92" height="10" rx="5" fill="#807868"/>
+</svg>

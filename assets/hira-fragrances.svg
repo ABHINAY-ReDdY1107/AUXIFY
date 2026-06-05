@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#1a1814"/>
+  <!-- Perfume bottle silhouette -->
+  <rect x="45" y="22" width="30" height="8" rx="2" fill="#c4a96d"/>
+  <rect x="52" y="14" width="16" height="12" rx="3" fill="#c4a96d" opacity="0.6"/>
+  <rect x="56" y="8" width="8" height="8" rx="4" fill="#c4a96d" opacity="0.4"/>
+  <path d="M40 30 h40 v60 q0 16 -20 22 q-20 -6 -20 -22 Z" fill="#c4a96d" opacity="0.2" stroke="#c4a96d" stroke-width="1.5"/>
+  <path d="M45 50 q15 -8 30 0" stroke="#c4a96d" stroke-width="1" opacity="0.5"/>
+  <path d="M45 62 q15 -8 30 0" stroke="#c4a96d" stroke-width="1" opacity="0.35"/>
+  <path d="M47 74 q13 -8 26 0" stroke="#c4a96d" stroke-width="1" opacity="0.25"/>
+  <!-- Sparkle accents -->
+  <circle cx="35" cy="55" r="1.5" fill="#c4a96d" opacity="0.6"/>
+  <circle cx="85" cy="45" r="1" fill="#c4a96d" opacity="0.5"/>
+  <circle cx="88" cy="70" r="1.5" fill="#c4a96d" opacity="0.4"/>
+  <text x="60" y="108" text-anchor="middle" fill="#c4a96d" font-family="Georgia, serif" font-size="9" letter-spacing="2" opacity="0.7">HF</text>
+</svg>

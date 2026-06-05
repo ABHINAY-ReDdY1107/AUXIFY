@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="GenZ translator project mockup">
+  <rect width="900" height="620" fill="#f5edd8"/>
+  <rect x="78" y="76" width="744" height="468" rx="38" fill="#1a1814"/>
+  <rect x="126" y="126" width="648" height="368" rx="30" fill="#fdfbf8"/>
+  <rect x="162" y="164" width="250" height="246" rx="26" fill="#f7f4ef" stroke="#dacaa2"/>
+  <rect x="488" y="164" width="250" height="246" rx="26" fill="#2d2a24"/>
+  <path d="M413 287h74" stroke="#8b7340" stroke-width="10" stroke-linecap="round"/>
+  <path d="M463 263l26 24-26 24" fill="none" stroke="#8b7340" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="208" y="274" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#8b7340">slay</text>
+  <text x="526" y="255" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#f5edd8">excellent</text>
+  <text x="526" y="310" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#c4a96d">work</text>
+  <rect x="170" y="445" width="176" height="12" rx="6" fill="#8b7340"/>
+  <rect x="382" y="445" width="240" height="12" rx="6" fill="#cbbf9f"/>
+  <circle cx="690" cy="450" r="20" fill="#c4a96d"/>
+  <path d="M682 450h16M690 442v16" stroke="#1a1814" stroke-width="5" stroke-linecap="round"/>
+</svg>

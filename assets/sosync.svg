@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" rx="12" fill="#1A1814"/>
+  <rect x="40" y="40" width="320" height="220" rx="8" fill="#2D2A24" stroke="#8B7340" stroke-width="0.5"/>
+  <!-- Sync arrows circle -->
+  <circle cx="200" cy="130" r="50" stroke="#C4A96D" stroke-width="1" fill="none" opacity="0.2"/>
+  <circle cx="200" cy="130" r="35" stroke="#C4A96D" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <!-- Sync arrows -->
+  <path d="M220 95 A30 30 0 0 1 230 130" stroke="#C4A96D" stroke-width="2" fill="none"/>
+  <polygon points="232,125 230,135 225,127" fill="#C4A96D"/>
+  <path d="M180 165 A30 30 0 0 1 170 130" stroke="#C4A96D" stroke-width="2" fill="none"/>
+  <polygon points="168,135 170,125 175,133" fill="#C4A96D"/>
+  <!-- SO text -->
+  <text x="192" y="136" text-anchor="middle" fill="#C4A96D" font-family="sans-serif" font-size="18" font-weight="bold">SO</text>
+  <!-- Connected nodes -->
+  <circle cx="110" cy="90" r="12" fill="#C4A96D" opacity="0.15" stroke="#C4A96D" stroke-width="1"/>
+  <circle cx="110" cy="90" r="4" fill="#C4A96D"/>
+  <line x1="122" y1="95" x2="155" y2="115" stroke="#8B7340" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="290" cy="90" r="12" fill="#C4A96D" opacity="0.15" stroke="#C4A96D" stroke-width="1"/>
+  <circle cx="290" cy="90" r="4" fill="#C4A96D"/>
+  <line x1="278" y1="95" x2="245" y2="115" stroke="#8B7340" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="110" cy="170" r="12" fill="#C4A96D" opacity="0.15" stroke="#C4A96D" stroke-width="1"/>
+  <circle cx="110" cy="170" r="4" fill="#C4A96D"/>
+  <line x1="122" y1="165" x2="155" y2="145" stroke="#8B7340" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="290" cy="170" r="12" fill="#C4A96D" opacity="0.15" stroke="#C4A96D" stroke-width="1"/>
+  <circle cx="290" cy="170" r="4" fill="#C4A96D"/>
+  <line x1="278" y1="165" x2="245" y2="145" stroke="#8B7340" stroke-width="0.8" opacity="0.5"/>
+  <!-- Label -->
+  <text x="200" y="230" text-anchor="middle" fill="#C4A96D" font-family="sans-serif" font-size="11" letter-spacing="0.15em" opacity="0.6">SOSYNC</text>
+  <!-- Subtitle -->
+  <text x="200" y="248" text-anchor="middle" fill="#6B6560" font-family="sans-serif" font-size="9" letter-spacing="0.1em">SOCIAL SYNC PLATFORM</text>
+</svg>

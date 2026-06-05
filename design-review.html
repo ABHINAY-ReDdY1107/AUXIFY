@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auxify Design Review</title>
+  <style>
+    :root {
+      --gold: #8b7340;
+      --gold-light: #c4a96d;
+      --dark: #1a1814;
+      --charcoal: #2d2a24;
+      --cream: #f7f4ef;
+      --white: #fdfbf8;
+      --muted: #6b6560;
+    }
+    @page { margin: 0.62in; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--dark);
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 10.8pt;
+      line-height: 1.55;
+    }
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.05;
+      margin: 0;
+    }
+    h1 { font-size: 34pt; max-width: 6.8in; }
+    h2 { font-size: 19pt; margin-bottom: 10pt; color: var(--dark); }
+    h3 { font-size: 13.5pt; margin-bottom: 5pt; }
+    p { margin: 0 0 8pt; color: var(--muted); }
+    ul { margin: 0; padding-left: 16pt; color: var(--muted); }
+    li { margin-bottom: 4pt; }
+    .cover {
+      min-height: 9.3in;
+      padding: 0.35in;
+      background: var(--dark);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20pt;
+      font-weight: 700;
+    }
+    .brand span, .accent { color: var(--gold-light); }
+    .eyebrow {
+      color: var(--gold-light);
+      font-size: 8pt;
+      letter-spacing: 2pt;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 12pt;
+    }
+    .cover p {
+      max-width: 5.8in;
+      color: rgba(253,251,248,0.72);
+      font-size: 12pt;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10pt;
+      border-top: 1px solid rgba(196,169,109,0.35);
+      padding-top: 14pt;
+    }
+    .meta div {
+      color: rgba(253,251,248,0.7);
+      font-size: 9.5pt;
+    }
+    .meta strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 8pt;
+      letter-spacing: 1.4pt;
+      text-transform: uppercase;
+      margin-bottom: 3pt;
+    }
+    section {
+      page-break-inside: avoid;
+      padding: 22pt 0;
+      border-bottom: 1px solid #e5dcc8;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16pt;
+    }
+    .card {
+      border: 1px solid #e2d6bd;
+      background: var(--cream);
+      padding: 13pt;
+    }
+    .list-title {
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 1.1pt;
+      text-transform: uppercase;
+      font-size: 8pt;
+      margin-bottom: 5pt;
+    }
+    .swatches {
+      display: flex;
+      gap: 8pt;
+      margin-top: 8pt;
+    }
+    .swatch {
+      width: 54pt;
+      height: 34pt;
+      border: 1px solid #d4c59e;
+    }
+    .gold { background: var(--gold); }
+    .cream { background: var(--cream); }
+    .dark { background: var(--dark); }
+    .charcoal { background: var(--charcoal); }
+    .footer-note {
+      padding-top: 16pt;
+      color: var(--muted);
+      font-size: 9pt;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="brand">Aux<span>ify</span></div>
+    <div>
+      <p class="eyebrow">Website redesign review</p>
+      <h1>Premium agency portfolio system for Auxify.</h1>
+      <p>The redesigned website preserves the existing luxury palette and type direction while rebuilding the experience into a cleaner, more cinematic, and more professional digital studio presence.</p>
+    </div>
+    <div class="meta">
+      <div><strong>Deliverable</strong>Static production website</div>
+      <div><strong>Focus</strong>Portfolio, services, motion, contact</div>
+      <div><strong>Priority</strong>Animated wallet project showcase</div>
+    </div>
+  </div>
+
+  <section>
+    <p class="eyebrow">Design decisions</p>
+    <h2>From student agency template to premium studio language.</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="list-title">Visual system</p>
+        <ul>
+          <li>Kept the gold, cream, and dark charcoal brand palette.</li>
+          <li>Preserved the existing font families: Cormorant Garamond and DM Sans.</li>
+          <li>Introduced larger editorial headings, quieter body copy, and more deliberate section spacing.</li>
+          <li>Removed cluttered elements, emoji-heavy project visuals, and inconsistent inline styling.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="list-title">Brand expression</p>
+        <ul>
+          <li>Positioned Auxify as a lean AI-powered digital studio.</li>
+          <li>Shifted copy from casual student phrasing to professional agency language.</li>
+          <li>Used subtle luxury materials: grain, fine lines, soft shadows, and gold accents.</li>
+          <li>Created original project mockup artwork for each featured build.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="swatches">
+      <div class="swatch gold"></div>
+      <div class="swatch cream"></div>
+      <div class="swatch dark"></div>
+      <div class="swatch charcoal"></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Animation system</p>
+    <h2>Premium motion with restraint.</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="list-title">Implemented motion</p>
+        <ul>
+          <li>Page-load brand sequence with a controlled reveal.</li>
+          <li>Hero text line reveal using GSAP when available.</li>
+          <li>ScrollTrigger parallax in the hero and wallet showcase.</li>
+          <li>Staggered section reveals via IntersectionObserver fallback.</li>
+          <li>Animated image masking on project case-study visuals.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="list-title">Micro interactions</p>
+        <ul>
+          <li>Magnetic buttons and brand link interactions on pointer devices.</li>
+          <li>Smooth custom cursor ring with hover expansion.</li>
+          <li>Service card elevation and animated bottom borders.</li>
+          <li>Project card hover depth, shadow, and inspection states.</li>
+          <li>Reduced-motion handling for accessibility.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Project showcase</p>
+    <h2>The wallet becomes the centerpiece.</h2>
+    <p>The previous stacked project area was rebuilt into a sticky scroll scene. A realistic dark leather-style wallet anchors the section, while project cards slide outward in sequence with depth, rotation, layering, and premium shadows. The cards behave like collectible design objects and are followed by full project storytelling panels.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="list-title">Project details added</p>
+        <ul>
+          <li>Problem solved</li>
+          <li>Solution provided</li>
+          <li>Timeline</li>
+          <li>Technology stack</li>
+          <li>Responsible impact statement without unrealistic claims</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="list-title">Projects represented</p>
+        <ul>
+          <li>Lost & Found</li>
+          <li>Payment Automation</li>
+          <li>GenZ Standard English Translator</li>
+          <li>Auxify Website redesign as a studio system card</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Content changes</p>
+    <h2>Resume information was used selectively.</h2>
+    <p>The resume was reviewed and used only where it strengthened credibility. CGPA, school percentages, sports awards, and unrelated academic details were intentionally excluded. The site now references relevant project history and practical capabilities: Python, SQL, Data Analysis, Figma, Framer, N8N, AI tools, automation thinking, and product/interface work.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Responsiveness and accessibility</p>
+    <h2>Built to feel finished across screen sizes.</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="list-title">Responsiveness</p>
+        <ul>
+          <li>Mobile navigation with accessible expanded state.</li>
+          <li>One-column mobile layouts for services, about, contact, and case studies.</li>
+          <li>Wallet animation falls back to stacked project cards on small screens.</li>
+          <li>Stable dimensions for cards, wallet, timeline, and form controls.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="list-title">Accessibility</p>
+        <ul>
+          <li>Semantic sections, headings, forms, labels, and navigation.</li>
+          <li>Skip link for keyboard users.</li>
+          <li>Reduced-motion media query and animation fallback behavior.</li>
+          <li>Decorative images hidden from assistive technology where appropriate.</li>
+          <li>Improved color contrast across dark and light sections.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Technical cleanup</p>
+    <h2>Cleaner structure and production-ready organization.</h2>
+    <ul>
+      <li>Replaced the large single-file website with organized HTML, CSS, JavaScript, and asset files.</li>
+      <li>Removed duplicate inline scripts and inconsistent inline CSS patterns.</li>
+      <li>Added graceful fallbacks if GSAP or ScrollTrigger fail to load.</li>
+      <li>Kept the site static and deployable from the Auxify folder.</li>
+      <li>Created local SVG mockups to avoid broken image dependencies.</li>
+    </ul>
+    <p class="footer-note">Final files are located in the AUXIFY folder on the desktop.</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Payment automation project mockup">
+  <rect width="900" height="620" fill="#f5edd8"/>
+  <rect x="80" y="82" width="740" height="456" rx="36" fill="#1a1814"/>
+  <rect x="126" y="126" width="286" height="368" rx="28" fill="#fdfbf8"/>
+  <rect x="154" y="164" width="148" height="18" rx="9" fill="#1a1814"/>
+  <rect x="154" y="214" width="204" height="96" rx="22" fill="#8b7340"/>
+  <path d="M188 262h134" stroke="#fdfbf8" stroke-width="12" stroke-linecap="round"/>
+  <rect x="154" y="344" width="210" height="16" rx="8" fill="#c4a96d"/>
+  <rect x="154" y="382" width="156" height="12" rx="6" fill="#bcb19a"/>
+  <rect x="470" y="152" width="246" height="72" rx="22" fill="#2d2a24" stroke="#c4a96d"/>
+  <rect x="470" y="274" width="246" height="72" rx="22" fill="#2d2a24" stroke="#c4a96d"/>
+  <rect x="470" y="396" width="246" height="72" rx="22" fill="#2d2a24" stroke="#c4a96d"/>
+  <path d="M593 224v50M593 346v50" stroke="#c4a96d" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="514" cy="188" r="18" fill="#c4a96d"/>
+  <circle cx="514" cy="310" r="18" fill="#c4a96d"/>
+  <circle cx="514" cy="432" r="18" fill="#c4a96d"/>
+  <rect x="552" y="176" width="110" height="12" rx="6" fill="#f5edd8"/>
+  <rect x="552" y="298" width="132" height="12" rx="6" fill="#f5edd8"/>
+  <rect x="552" y="420" width="96" height="12" rx="6" fill="#f5edd8"/>
+  <path d="M726 176l34 34 64-78" fill="none" stroke="#c4a96d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
