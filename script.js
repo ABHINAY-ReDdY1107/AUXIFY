@@ -221,6 +221,20 @@ const walletButton = document.querySelector("#walletButton");
 walletButton?.addEventListener("click", () => {
   showcase?.classList.add("is-open");
   walletButton.setAttribute("aria-expanded", "true");
+  
+  // Smooth scroll down so that projects are visible
+  const projectCards = document.getElementById("projectCards");
+  if (projectCards) {
+    setTimeout(() => {
+      const headerOffset = 100; // Account for the fixed site header
+      const elementPosition = projectCards.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }, 150); // Small timeout to allow browser layout calculation after adding .is-open class
+  }
 });
 
 document.querySelectorAll(".wallet-card").forEach((card) => {
