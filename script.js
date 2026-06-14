@@ -251,6 +251,14 @@ document.querySelectorAll(".wallet-card").forEach((card) => {
       }, 150);
     }
   });
+
+  // Keyboard navigation support for div-based role="button" elements
+  card.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      card.click();
+    }
+  });
 });
 
 /* ── Stats counter animation ─────────────────────────── */

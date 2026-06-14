@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.1">
+  <link rel="stylesheet" href="styles.css?v=1.2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -324,70 +324,73 @@
           </div>
 
           <div class="project-card-grid" id="projectCards">
-            <button class="project-card wallet-card card-one is-active" type="button" data-project="vave-salon">
+            <div class="project-card wallet-card card-one is-active" role="button" tabindex="0" data-project="vave-salon">
               <img src="assets/vave-salon.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>Client Project</span>
                 <h4>Vave Salon</h4>
                 <p>A responsive website with a premium mobile-first interface designed for a luxury salon brand.</p>
+                <a href="https://www.vavesalon.com/" target="_blank" class="project-card-link" onclick="event.stopPropagation();">Click to open ↗</a>
               </div>
-            </button>
-            <button class="project-card wallet-card card-two" type="button" data-project="mayaans">
+            </div>
+            <div class="project-card wallet-card card-two" role="button" tabindex="0" data-project="mayaans">
               <img src="assets/mayaans.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>Client Project</span>
                 <h4>Mayaans Chocotech</h4>
                 <p>A professional, high-performance confectionery technology storefront with clean product layouts.</p>
+                <a href="https://www.mayaans.com/" target="_blank" class="project-card-link" onclick="event.stopPropagation();">Click to open ↗</a>
               </div>
-            </button>
-            <button class="project-card wallet-card card-three" type="button" data-project="hira-fragrances">
+            </div>
+            <div class="project-card wallet-card card-three" role="button" tabindex="0" data-project="hira-fragrances">
               <img src="assets/hira-fragrances.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>E-Commerce Website</span>
                 <h4>Hira Fragrances</h4>
                 <p>A premium e-commerce website for Hira Fragrances — a luxury perfume brand.</p>
+                <a href="https://hirafragrances.com/" target="_blank" class="project-card-link" onclick="event.stopPropagation();">Click to open ↗</a>
               </div>
-            </button>
-            <button class="project-card wallet-card card-four" type="button" data-project="lost-found">
+            </div>
+            <div class="project-card wallet-card card-four" role="button" tabindex="0" data-project="lost-found">
               <img src="assets/lost-found.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>Campus Utility</span>
                 <h4>Lost &amp; Found</h4>
                 <p>A QR-led campus item recovery system for students at Mahindra University.</p>
               </div>
-            </button>
-            <button class="project-card wallet-card card-five" type="button" data-project="payment">
+            </div>
+            <div class="project-card wallet-card card-five" role="button" tabindex="0" data-project="payment">
               <img src="assets/payment-automation.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>Workflow Automation</span>
                 <h4>Payment Automation</h4>
                 <p>Recurring digital payment workflow concept using automation and structured processing.</p>
               </div>
-            </button>
-            <button class="project-card wallet-card card-six" type="button" data-project="genz">
+            </div>
+            <div class="project-card wallet-card card-six" role="button" tabindex="0" data-project="genz">
               <img src="assets/genz-translator.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>Language Tool</span>
                 <h4>GenZ Translator</h4>
                 <p>A Python language experiment that translates Gen Z slang into standard English.</p>
               </div>
-            </button>
-            <button class="project-card wallet-card card-seven" type="button" data-project="quickbots">
+            </div>
+            <div class="project-card wallet-card card-seven" role="button" tabindex="0" data-project="quickbots">
               <img src="assets/quick-bots.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>AI Chatbot Framework</span>
                 <h4>Quick Bots</h4>
                 <p>A rapid bot-building framework for deploying intelligent conversational agents fast.</p>
               </div>
-            </button>
-            <button class="project-card wallet-card card-eight" type="button" data-project="sosync">
+            </div>
+            <div class="project-card wallet-card card-eight" role="button" tabindex="0" data-project="sosync">
               <img src="assets/sosync.svg" alt="" loading="lazy">
               <div class="project-card-body">
                 <span>Emergency Safety App</span>
                 <h4>SOSYNC</h4>
                 <p>A mobile emergency alert app that broadcasts live GPS location to trusted contacts in under two seconds.</p>
               </div>
-            </button>
+            </div>
           </div>
         </div>
 
@@ -684,6 +687,6 @@
   <!-- GSAP must load BEFORE script.js to avoid undefined gsap errors -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="script.js?v=1.1" defer></script>
+  <script src="script.js?v=1.2" defer></script>
 </body>
 </html>

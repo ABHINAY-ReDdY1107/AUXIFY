@@ -1412,6 +1412,36 @@ h3.section-title {
   line-height: 1.55;
 }
 
+.project-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.1rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(139, 115, 64, 0.28);
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.project-card-link:hover,
+.project-card-link:focus-visible {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 115, 64, 0.18);
+  outline: none;
+}
+
 /* ═══════════════════════════════════════════════════
    21. PROJECT DETAIL PANEL — Glassmorphism
    ═══════════════════════════════════════════════════ */
