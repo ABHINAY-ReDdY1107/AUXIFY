@@ -19,7 +19,7 @@ const projects = {
     link: "https://www.vavesalon.com/"
   },
   mayaans: {
-    number: "02",
+    number: "09",
     title: "Mayaans Chocotech",
     image: "assets/mayaans.svg",
     summary: "Developed a professional, high-performance website for Mayaans Chocotech. Focused on premium design aesthetics, clear product presentation, and smooth user interactions.",
@@ -98,9 +98,9 @@ const projects = {
     impact: "Reduces emergency alert time to under 2 seconds, replacing the slow process of individual calls or texts during a crisis."
   },
   "bill-generator": {
-    number: "09",
+    number: "02",
     title: "Bill Generator",
-    image: "assets/vave-salon.jpg", // Using placeholder image for now, can be updated later
+    image: "assets/bill-generator.svg",
     summary: "A bill generator created for a fashion designer boutique to easily generate and manage invoices.",
     problem: "Manual billing processes were time-consuming and prone to errors for the boutique.",
     solution: "A streamlined digital bill generator that allows quick invoice creation, calculation, and management.",
