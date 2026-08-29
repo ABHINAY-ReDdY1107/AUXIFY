@@ -1331,6 +1331,7 @@ h3.section-title {
 .project-showcase.is-open .card-six   { transition-delay: 0.48s; }
 .project-showcase.is-open .card-seven { transition-delay: 0.54s; }
 .project-showcase.is-open .card-eight { transition-delay: 0.60s; }
+.project-showcase.is-open .card-nine  { transition-delay: 0.66s; }
 
 .card-one   { --closed-rot: -8deg;  --open-rot: -1.5deg; z-index: 9; }
 .card-two   { --closed-rot: -2deg;  --open-rot:  1deg;   z-index: 8; }
@@ -1340,6 +1341,7 @@ h3.section-title {
 .card-six   { --closed-rot: 15deg;  --open-rot:  0.8deg; z-index: 4; }
 .card-seven { --closed-rot: 17deg;  --open-rot: -1.2deg; z-index: 3; }
 .card-eight { --closed-rot: 19deg;  --open-rot:  0.5deg; z-index: 2; }
+.card-nine  { --closed-rot: 21deg;  --open-rot: -0.8deg; z-index: 1; }
 
 /* Hover/Active glow on wallet cards */
 .wallet-card:hover,

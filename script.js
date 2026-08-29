@@ -96,6 +96,17 @@ const projects = {
     timeline: "Apr 2026 to Jun 2026",
     stack: "Mobile App, GPS API, SMS/WhatsApp integration, real-time location",
     impact: "Reduces emergency alert time to under 2 seconds, replacing the slow process of individual calls or texts during a crisis."
+  },
+  "bill-generator": {
+    number: "09",
+    title: "Bill Generator",
+    image: "assets/vave-salon.jpg", // Using placeholder image for now, can be updated later
+    summary: "A bill generator created for a fashion designer boutique to easily generate and manage invoices.",
+    problem: "Manual billing processes were time-consuming and prone to errors for the boutique.",
+    solution: "A streamlined digital bill generator that allows quick invoice creation, calculation, and management.",
+    timeline: "Aug 2026",
+    stack: "Web Application, Invoice Management",
+    impact: "Reduces billing time significantly and provides professional, accurate invoices for clients."
   }
 };
 
