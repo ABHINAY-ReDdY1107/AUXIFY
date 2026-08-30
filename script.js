@@ -1,3 +1,7 @@
+/* ──────────────────────────────────────────────────
+   AUXIFY — Main Script v2.0
+   ────────────────────────────────────────────────── */
+
 const body = document.body;
 const header = document.querySelector("#siteHeader");
 const navToggle = document.querySelector(".nav-toggle");
@@ -5,12 +9,13 @@ const siteNav = document.querySelector(".site-nav");
 const loader = document.querySelector(".loader");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+/* ── Project Data ────────────────────────────────── */
 const projects = {
   "vave-salon": {
     number: "01",
     title: "Vave Salon",
     image: "assets/vave-salon.svg",
-    summary: "Designed and built a responsive business website for a salon brand, focusing on modern UI/UX principles, mobile-first design, and a seamless user experience across all devices.",
+    summary: "Designed and built a responsive business website for a luxury salon brand, focusing on modern UI/UX principles, mobile-first design, and a seamless user experience across all devices.",
     problem: "The salon needed a premium digital presence that allowed clients to browse services easily, check stylist profiles, and contact them seamlessly on mobile devices.",
     solution: "Created a mobile-first responsive design with refined UI, smooth transitions, and a clean services layout that elevates the salon's brand online.",
     timeline: "Jun 2025 to Aug 2025",
@@ -22,9 +27,9 @@ const projects = {
     number: "09",
     title: "Mayaans Chocotech",
     image: "assets/mayaans.svg",
-    summary: "Developed a professional, high-performance website for Mayaans Chocotech. Focused on premium design aesthetics, clear product presentation, and smooth user interactions.",
-    problem: "A confectionery tech business needing a polished digital presence to present their confectionery technology and products professionally to prospective business partners.",
-    solution: "Engineered a clean frontend with responsive layouts, focusing on high-quality product images, structured technical data, and smooth animations.",
+    summary: "Developed a professional, high-performance website for Mayaans Chocotech — a confectionery technology company. Focused on premium design aesthetics, clear product presentation, and smooth user interactions.",
+    problem: "A confectionery tech business needing a polished digital presence to present their technology and products professionally to prospective business partners.",
+    solution: "Engineered a clean frontend with responsive layouts, focusing on high-quality product presentation, structured technical data, and smooth animations.",
     timeline: "Sep 2025 to Oct 2025",
     stack: "Web Design, Frontend, UI/UX, Client Work",
     impact: "Provides a modern, high-speed brand storefront that showcases their technology and product lines effectively.",
@@ -50,18 +55,18 @@ const projects = {
     problem: "Lost items are hard to match with owners when discovery relies on informal groups or manual coordination.",
     solution: "A QR-first flow that gives each item a traceable recovery path and keeps the interface simple for students.",
     timeline: "Jan 2025 to Apr 2025",
-    stack: "Python, QR workflows, UI planning, data handling",
-    impact: "Improves campus recovery coordination without claiming measured deployment results."
+    stack: "Python, QR Workflows, UI Planning, Data Handling",
+    impact: "Improves campus recovery coordination without requiring centralised infrastructure."
   },
   payment: {
     number: "05",
     title: "Payment Automation",
     image: "assets/payment-automation.svg",
-    summary: "An automated recurring digital payment system concept built around structured workflows, payment reminders, and reduced manual tracking.",
+    summary: "An automated recurring digital payment system built around structured workflows, payment reminders, and reduced manual tracking.",
     problem: "Recurring payments create operational drag when reminders, status checks, and records are handled manually.",
-    solution: "A workflow-driven automation layer that maps payment triggers, updates, and follow-up actions.",
+    solution: "A workflow-driven automation layer that maps payment triggers, updates, and follow-up actions into a structured system.",
     timeline: "Dec 2025 to Jan 2026",
-    stack: "N8N, Python, automation logic, structured data",
+    stack: "N8N, Python, Automation Logic, Structured Data",
     impact: "Designed to reduce repetitive admin effort while preserving clear human oversight."
   },
   genz: {
@@ -70,9 +75,9 @@ const projects = {
     image: "assets/genz-translator.svg",
     summary: "A language-processing project that turns slang-heavy expressions into clearer standard English for more accessible communication.",
     problem: "Informal slang can be difficult to interpret across different audiences, contexts, and age groups.",
-    solution: "A Python-based translator experiment that maps modern slang into readable standard English.",
+    solution: "A Python-based translator experiment that maps modern slang into readable standard English using NLP techniques.",
     timeline: "Oct 2025 to Nov 2025",
-    stack: "Python, NLP concepts, AI tools, data preparation",
+    stack: "Python, NLP, AI Tools, Data Preparation",
     impact: "Demonstrates practical language tooling without overstating production-scale accuracy."
   },
   quickbots: {
@@ -83,8 +88,8 @@ const projects = {
     problem: "Building chatbots from scratch is time-consuming and requires significant boilerplate code for each new bot.",
     solution: "A modular framework that provides pre-built components for conversation flow, API integration, and deployment pipelines.",
     timeline: "Mar 2026 to May 2026",
-    stack: "Python, AI APIs, conversation design, modular architecture",
-    impact: "Reduces bot development time significantly while maintaining customization flexibility."
+    stack: "Python, AI APIs, Conversation Design, Modular Architecture",
+    impact: "Reduces bot development time significantly while maintaining customisation flexibility."
   },
   sosync: {
     number: "08",
@@ -94,33 +99,34 @@ const projects = {
     problem: "Emergency calls are slow, manual location sharing fails under panic, and no existing tool alerts multiple contacts at the exact same time with one tap.",
     solution: "A single long-press of the SOS button dispatches simultaneous SMS/WhatsApp alerts with real-time GPS to all saved contacts, with a 1.5-second hold confirmation to prevent accidental triggers.",
     timeline: "Apr 2026 to Jun 2026",
-    stack: "Mobile App, GPS API, SMS/WhatsApp integration, real-time location",
-    impact: "Reduces emergency alert time to under 2 seconds, replacing the slow process of individual calls or texts during a crisis."
+    stack: "Mobile App, GPS API, SMS/WhatsApp Integration, Real-Time Location",
+    impact: "Reduces emergency alert time to under 2 seconds — replacing the slow process of individual calls or texts during a crisis."
   },
   "bill-generator": {
     number: "02",
     title: "Bill Generator",
     image: "assets/bill-generator.svg",
-    summary: "A bill generator created for a fashion designer boutique to easily generate and manage invoices.",
-    problem: "Manual billing processes were time-consuming and prone to errors for the boutique.",
-    solution: "A streamlined digital bill generator that allows quick invoice creation, calculation, and management.",
+    summary: "A streamlined bill generator created for a fashion designer boutique to easily generate, calculate, and manage invoices.",
+    problem: "Manual billing processes were time-consuming and prone to errors for the boutique owner.",
+    solution: "A clean digital bill generator that allows quick invoice creation, automatic calculation, and professional output.",
     timeline: "Aug 2026",
-    stack: "Web Application, Invoice Management",
-    impact: "Reduces billing time significantly and provides professional, accurate invoices for clients."
+    stack: "Web Application, Invoice Management, Frontend",
+    impact: "Reduces billing time and provides professional, accurate invoices for clients.",
+    link: "https://bill-generator-beryl.vercel.app/"
   }
 };
 
-/* ── Loader ──────────────────────────────────────────── */
+/* ── Loader ──────────────────────────────────────── */
 window.addEventListener("load", () => {
   window.setTimeout(() => loader?.classList.add("is-hidden"), 500);
 });
 
-/* ── Header scroll behavior ──────────────────────────── */
+/* ── Header scroll ───────────────────────────────── */
 window.addEventListener("scroll", () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 30);
 }, { passive: true });
 
-/* ── Mobile nav toggle ───────────────────────────────── */
+/* ── Mobile nav toggle ───────────────────────────── */
 navToggle?.addEventListener("click", () => {
   const isOpen = navToggle.getAttribute("aria-expanded") === "true";
   navToggle.setAttribute("aria-expanded", String(!isOpen));
@@ -138,15 +144,14 @@ siteNav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
-/* ── Reveal on scroll (staggered) ────────────────────── */
+/* ── Reveal on scroll (staggered) ───────────────── */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // Stagger reveals within the same parent
       const parent = entry.target.parentElement;
       const siblings = parent ? Array.from(parent.querySelectorAll(".reveal")) : [];
       const idx = siblings.indexOf(entry.target);
-      const delay = Math.min(idx * 80, 400); // max 400ms stagger
+      const delay = Math.min(idx * 80, 400);
 
       setTimeout(() => {
         entry.target.classList.add("is-visible");
@@ -159,7 +164,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
-/* ── Project switching ───────────────────────────────── */
+/* ── Project switching ───────────────────────────── */
 const setProject = (key) => {
   const project = projects[key];
   if (!project) return;
@@ -182,7 +187,6 @@ const setProject = (key) => {
   Object.entries(fields).forEach(([id, value]) => {
     const el = document.getElementById(id);
     if (el) {
-      // Animate text change
       el.style.opacity = "0";
       el.style.transform = "translateY(8px)";
       setTimeout(() => {
@@ -204,7 +208,6 @@ const setProject = (key) => {
     }, 200);
   }
 
-  // Update dynamic project link
   const linkContainer = document.getElementById("detailLinkContainer");
   const linkEl = document.getElementById("detailLink");
   if (linkContainer && linkEl) {
@@ -225,26 +228,22 @@ const setProject = (key) => {
   }
 };
 
-/* ── Wallet interaction ──────────────────────────────── */
+/* ── Wallet interaction ──────────────────────────── */
 const showcase = document.querySelector(".project-showcase");
 const walletButton = document.querySelector("#walletButton");
 
 walletButton?.addEventListener("click", () => {
   showcase?.classList.add("is-open");
   walletButton.setAttribute("aria-expanded", "true");
-  
-  // Smooth scroll down so that projects are visible
+
   const projectCards = document.getElementById("projectCards");
   if (projectCards) {
     setTimeout(() => {
-      const headerOffset = 100; // Account for the fixed site header
+      const headerOffset = 100;
       const elementPosition = projectCards.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - headerOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }, 150); // Small timeout to allow browser layout calculation after adding .is-open class
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+    }, 150);
   }
 });
 
@@ -254,7 +253,6 @@ document.querySelectorAll(".wallet-card").forEach((card) => {
     walletButton?.setAttribute("aria-expanded", "true");
     setProject(card.dataset.project);
 
-    // Auto-scroll to detail panel when card is clicked
     const detailPanel = document.getElementById("projectDetail");
     if (detailPanel) {
       setTimeout(() => {
@@ -263,7 +261,6 @@ document.querySelectorAll(".wallet-card").forEach((card) => {
     }
   });
 
-  // Keyboard navigation support for div-based role="button" elements
   card.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
@@ -272,27 +269,20 @@ document.querySelectorAll(".wallet-card").forEach((card) => {
   });
 });
 
-/* ── Stats counter animation ─────────────────────────── */
+/* ── Stats counter animation ─────────────────────── */
 const animateCounter = (el) => {
   const target = parseInt(el.dataset.target, 10);
   if (isNaN(target)) return;
 
   const duration = target > 100 ? 2000 : 1500;
   const start = performance.now();
-
   const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4);
 
   const tick = (now) => {
     const elapsed = now - start;
     const progress = Math.min(elapsed / duration, 1);
-    const easedProgress = easeOutQuart(progress);
-    const current = Math.round(easedProgress * target);
-
-    el.textContent = current.toLocaleString();
-
-    if (progress < 1) {
-      requestAnimationFrame(tick);
-    }
+    el.textContent = Math.round(easeOutQuart(progress) * target).toLocaleString();
+    if (progress < 1) requestAnimationFrame(tick);
   };
 
   requestAnimationFrame(tick);
@@ -301,8 +291,7 @@ const animateCounter = (el) => {
 const statObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const counters = entry.target.querySelectorAll(".stat-number");
-      counters.forEach((counter, i) => {
+      entry.target.querySelectorAll(".stat-number").forEach((counter, i) => {
         setTimeout(() => animateCounter(counter), i * 150);
       });
       statObserver.unobserve(entry.target);
@@ -313,28 +302,71 @@ const statObserver = new IntersectionObserver((entries) => {
 const statsGrid = document.querySelector(".stats-grid");
 if (statsGrid) statObserver.observe(statsGrid);
 
-/* ── Timeline scroll progress ────────────────────────── */
-const timelineProgress = document.querySelector(".timeline-progress");
-const timeline = document.querySelector(".timeline");
+/* ── Process Journey — Stage Interaction ─────────── */
+const setupProcessJourney = () => {
+  const stages = document.querySelectorAll(".process-stage");
+  const trackFill = document.getElementById("processTrack");
+  if (!stages.length) return;
 
-if (timelineProgress && timeline) {
-  const updateTimelineProgress = () => {
-    const rect = timeline.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+  const activateStage = (index) => {
+    stages.forEach((s, i) => {
+      s.classList.toggle("active", i === index);
+      s.setAttribute("aria-pressed", String(i === index));
+    });
 
-    if (rect.top < windowHeight && rect.bottom > 0) {
-      const totalHeight = rect.height;
-      const visible = Math.min(windowHeight - rect.top, totalHeight);
-      const progress = Math.max(0, Math.min(visible / totalHeight, 1));
-      timelineProgress.style.height = `${progress * 100}%`;
+    // Update track fill
+    if (trackFill) {
+      const pct = stages.length > 1 ? (index / (stages.length - 1)) * 100 : 100;
+      trackFill.style.width = `${pct}%`;
     }
   };
 
-  window.addEventListener("scroll", updateTimelineProgress, { passive: true });
-  updateTimelineProgress();
-}
+  stages.forEach((stage, i) => {
+    stage.addEventListener("click", () => activateStage(i));
+    stage.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        activateStage(i);
+      }
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        activateStage(Math.min(i + 1, stages.length - 1));
+        stages[Math.min(i + 1, stages.length - 1)].focus();
+      }
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        activateStage(Math.max(i - 1, 0));
+        stages[Math.max(i - 1, 0)].focus();
+      }
+    });
+  });
 
-/* ── Custom cursor ───────────────────────────────────── */
+  // Scroll-driven auto-advance through stages
+  if (!reduceMotion) {
+    const journey = document.getElementById("processJourney");
+    if (journey) {
+      let lastActive = 0;
+      window.addEventListener("scroll", () => {
+        const rect = journey.getBoundingClientRect();
+        const windowH = window.innerHeight;
+        if (rect.top > windowH || rect.bottom < 0) return;
+
+        const progress = Math.max(0, Math.min(1, (windowH - rect.top) / (rect.height + windowH)));
+        const stageIndex = Math.round(progress * (stages.length - 1));
+
+        if (stageIndex !== lastActive) {
+          lastActive = stageIndex;
+          activateStage(stageIndex);
+        }
+      }, { passive: true });
+    }
+  }
+
+  // Initialise first stage
+  activateStage(0);
+};
+
+/* ── Custom cursor ───────────────────────────────── */
 const setupCursor = () => {
   if (reduceMotion || window.matchMedia("(pointer: coarse)").matches) return;
   const dot = document.querySelector(".cursor-dot");
@@ -363,13 +395,13 @@ const setupCursor = () => {
   };
   tick();
 
-  document.querySelectorAll("a, button, .service-card, .project-detail-panel, .testimonial-card, .faq-item summary").forEach((target) => {
+  document.querySelectorAll("a, button, .service-card, .project-detail-panel, .faq-item summary, .process-stage, .tool-card").forEach((target) => {
     target.addEventListener("mouseenter", () => ring.classList.add("is-active"));
     target.addEventListener("mouseleave", () => ring.classList.remove("is-active"));
   });
 };
 
-/* ── Magnetic buttons ────────────────────────────────── */
+/* ── Magnetic buttons ────────────────────────────── */
 const setupMagneticButtons = () => {
   if (reduceMotion || window.matchMedia("(pointer: coarse)").matches) return;
   document.querySelectorAll(".magnetic").forEach((el) => {
@@ -385,15 +417,14 @@ const setupMagneticButtons = () => {
   });
 };
 
-/* ── Parallax on hero elements ───────────────────────── */
+/* ── Parallax on hero elements ───────────────────── */
 const setupParallax = () => {
   if (reduceMotion || window.matchMedia("(pointer: coarse)").matches) return;
 
   const grain = document.querySelector(".hero-grain");
   const orbital = document.querySelector(".orbital-lines");
-  const studioCard = document.querySelector(".hero-studio-card");
 
-  if (!grain && !orbital && !studioCard) return;
+  if (!grain && !orbital) return;
 
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
@@ -403,16 +434,15 @@ const setupParallax = () => {
       const factor = scrollY / maxScroll;
       if (grain) grain.style.transform = `translateY(${factor * 40}px)`;
       if (orbital) orbital.style.transform = `translateY(${factor * 60}px)`;
-      if (studioCard) studioCard.style.transform = `translateY(${factor * 25}px)`;
     }
   }, { passive: true });
 };
 
-/* ── GSAP hero animation ─────────────────────────────── */
+/* ── GSAP hero animation ─────────────────────────── */
 const setupMotion = () => {
   if (typeof gsap === "undefined" || reduceMotion) {
-    // Fallback: just show everything
-    document.querySelectorAll(".about-hero-title, .about-hero-copy, .team-card").forEach((el) => {
+    // Fallback: ensure all about-hero elements are visible
+    document.querySelectorAll(".about-hero-title, .about-hero-copy, .founder-section").forEach((el) => {
       el.style.opacity = "1";
       el.style.transform = "none";
     });
@@ -421,21 +451,22 @@ const setupMotion = () => {
 
   gsap.set(".about-hero-title", { y: 24, opacity: 0 });
   gsap.set(".about-hero-copy", { y: 24, opacity: 0 });
-  gsap.set(".team-card", { y: 40, opacity: 0 });
+  gsap.set(".founder-section", { y: 40, opacity: 0 });
 
   gsap.timeline({ defaults: { ease: "power4.out" } })
     .to(".about-hero-title", { y: 0, opacity: 1, duration: 0.8, delay: 0.2 })
     .to(".about-hero-copy", { y: 0, opacity: 1, duration: 0.6 }, "-=0.4")
-    .to(".team-card", { y: 0, opacity: 1, duration: 0.8, stagger: 0.15 }, "-=0.3");
+    .to(".founder-section", { y: 0, opacity: 1, duration: 0.8 }, "-=0.3");
 };
 
-/* ── Detail text transition ──────────────────────────── */
-const detailTransitionEls = document.querySelectorAll("#detailNumber, #detailTitle, #detailSummary, #detailProblem, #detailSolution, #detailTimeline, #detailStack, #detailImpact, #detailImage, #detailLinkContainer");
-detailTransitionEls.forEach((el) => {
+/* ── Detail text transition styles ──────────────── */
+document.querySelectorAll(
+  "#detailNumber, #detailTitle, #detailSummary, #detailProblem, #detailSolution, #detailTimeline, #detailStack, #detailImpact, #detailImage, #detailLinkContainer"
+).forEach((el) => {
   el.style.transition = "opacity 0.25s ease, transform 0.25s ease";
 });
 
-/* ── Contact form (WhatsApp) ─────────────────────────── */
+/* ── Contact form (WhatsApp) ─────────────────────── */
 document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
   event.preventDefault();
   const form = event.currentTarget;
@@ -444,31 +475,25 @@ document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
   const project = form.querySelector("[name='project']")?.value || "";
   const message = form.querySelector("[name='message']")?.value.trim() || "";
 
-  const text = `Hi, I'd like to start a project with Auxify!
-
-*Name:* ${name}
-*WhatsApp:* ${whatsapp}
-*Project Type:* ${project}
-*Details:* ${message || "N/A"}`;
+  const text = `Hi, I'd like to start a project with AUXIFY!\n\n*Name:* ${name}\n*WhatsApp:* ${whatsapp}\n*Project Type:* ${project}\n*Details:* ${message || "N/A"}`;
 
   const whatsappURL = `https://wa.me/918106950950?text=${encodeURIComponent(text)}`;
   window.open(whatsappURL, "_blank");
 
   const note = form.querySelector(".form-note");
   if (note) {
-    note.textContent = "Opening WhatsApp... If it didn't open, please message +91 8106950950 directly.";
+    note.textContent = "Opening WhatsApp... If it didn't open, message +91 8106950950 directly.";
     note.style.color = "#c4a96d";
   }
 });
 
-/* ── Initialize ──────────────────────────────────────── */
+/* ── Initialize ──────────────────────────────────── */
 setupCursor();
 setupMagneticButtons();
 setupParallax();
+setupProcessJourney();
 setProject("vave-salon");
 
-// GSAP might be loaded synchronously before this script (defer)
-// Try immediately, and also on load as fallback
 if (typeof gsap !== "undefined") {
   setupMotion();
 } else {
